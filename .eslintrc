@@ -1,0 +1,35 @@
+{
+    "extends": ["plugin:prettier/recommended"],
+    "plugins": ["prettier"],
+    "rules": {
+        "prettier/prettier": "error",
+        "indent": [
+            "error",
+            2,
+            {
+                "VariableDeclarator": {
+                    "var": 2,
+                    "let": 2,
+                    "const": 3
+                },
+                "ArrayExpression": 1,
+                "ObjectExpression": 1,
+                "FunctionDeclaration": {
+                    "parameters": "first"
+                },
+                "CallExpression": {
+                    "arguments": "first"
+                },
+                "SwitchCase": 1
+            }
+        ]
+    },
+    "parserOptions": {
+        "ecmaVersion": 2017
+    },
+    "env": {
+        "es6": true,
+        "browser": true,
+        "node": true
+    }
+}
