@@ -5,7 +5,8 @@
 1. unzip or clone project from git
 2. go to folder `cd project`
 3. run `npm install`
-4. to start project run `npm start`
+4. test `npm test`
+5. to start project run `npm start`
 
 URL `localhost:3005`
 
